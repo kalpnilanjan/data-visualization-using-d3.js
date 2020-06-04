@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-axis.v1.min.js"></script>
+        <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+        <script>
+            var data = {{ data.chart_data | safe }};
+        </script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/style/style.css') }}">
+    </head>
+
+    <body>
+        <h1>CAMPUS RECRUITMENT VISUALIZATION</h1>
+        <div class='radio-button'>
+            <label class='radio-btn'>
+                <input type="radio" name="choice" value="degree" onclick='render_view(this.value)' checked> Degree Specialization
+            </label>
+            <label class='radio-btn'>
+                <input type="radio" name="choice" value="hsc" onclick='render_view(this.value)'> HSC Specialization
+            </label>
+            <label class='radio-btn'>
+                <input type="radio" name="choice" value="mba" onclick='render_view(this.value)'> MBA Specialization
+            </label>
+            <label class='radio-btn'>
+                <input type="radio" name="choice" value="placement" onclick='render_view(this.value)'> Placement Statistics
+            </label>
+        </div>
+        <div id = 'table_data'></div>
+        <div id = 'svg_container'></div>
+        <script type="text/javascript" src = "{{ url_for('static', filename='/script/app.js')}}"></script>
+    </body>
+</html>

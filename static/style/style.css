@@ -1,0 +1,72 @@
+body{
+  background-color: #5490f04d;
+  text-align: center;
+}
+
+h1{
+  margin-top: -5px;
+}
+
+/* Table Styling */
+table {
+  border: solid 1px #DDEEEE;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: inline-table;
+  margin: 10px auto;
+  font: normal 13px Arial, sans-serif;
+}
+
+thead th {
+  background-color: #8ec1ed;
+  border: solid 1px #DDEEEE;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: solid;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+tbody td {
+  border: solid 1px #DDEEEE;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+tbody tr:nth-child(odd) {     
+  background-color: #d8f1f2;
+}
+
+tbody tr:nth-child(even){
+  background-color: #c8eefa;
+}
+
+/* Chart Styling */
+#svg_container{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #234443;
+  height: 370px;
+  width: 450px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.tooltip_div {
+  position: absolute;
+  padding: 5px 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  opacity: 0;
+  background: #f4f4f4;
+}
+
+rect{
+  fill: #5db5e8;
+}
